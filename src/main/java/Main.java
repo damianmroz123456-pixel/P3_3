@@ -12,7 +12,17 @@ public class Main {
       }
       System.out.println();
     }
+    for (int i = 1; i <= n; i++){
+      for (int j = 0; j < i; j++){
+        if (j == 0 || j == i - 1 || i == n) {
+          System.out.print(s + " ");
+        }
+        else{
+          System.out.print("  ");
+        }
+      }
+      System.out.println();
+    }
     input.close();
-    
   }
 }
